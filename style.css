@@ -7,6 +7,7 @@ body{
 	background:black;
 }
 header{
+	width: 100%;
 	max-width: 1920px;
 	height: 1573px;
 	position: relative;
@@ -18,7 +19,10 @@ header{
 	font-family: Open Sans;
 	width: 100%;
 	max-width: 1751px;
-	margin: 0 85px;
+	position: absolute;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 30px;
 	display: flex;
 	align-items: center;
@@ -325,10 +329,18 @@ footer{
 	top: 0;
 	right: 0;
 }
+@media(max-width: 1920px){
+	body {
+  		overflow-x: hidden;
+	}
+	#header-child-1{
+		padding: 0 100px;
+	}	
+}
 @media (max-width: 1462px){
 	#container{
 		width: 100%;
-		margin: 0;
+		margin: 0 auto;
 	}
 	.box{
 		width: 100%;
