@@ -463,12 +463,7 @@ footer{
 	background: var(--dark);
 	border-radius: 12px;
 }
-.type-g-child:nth0child(3) h3{
-	min-width: 100%;
-	font-size: 1.3rem;
-	color: var(--accent);
-}
-.type-g-child:nth0child(3) img{
+.type-g-child:nth-child(2) img{
 	width: 50%;
 	min-width: 200px;
 }
