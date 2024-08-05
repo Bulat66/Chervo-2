@@ -38,6 +38,23 @@ function moveSlider2(){
   }
 }
 let intervalId2 = setInterval(moveSlider2, 2000);
+
+// SLIDER type-b
+let type_B = document.getElementsByClassName('type-b');
+let type_B_slide = document.getElementsByClassName('type-b-slide');
+
+let type_B_currentSlide = 0;
+
+function showSlide(n) {
+    type_B_slide[type_B_currentSlide].classList.remove('type-b-active-slide');
+    type_B_currentSlide = (n + type_B_slide.length) % type_B_slide.length;
+    type_B_slide[type_B_currentSlide].classList.add('type-b-active-slide');
+}
+function nextSlide() {
+    showSlide(type_B_currentSlide + 1);
+}
+let intervalId = setInterval(nextSlide, 5000);
+
 // let currentSlide = 0;
 
 // function showSlide(n) {
